@@ -1,0 +1,16 @@
+#!/bin/python3
+
+import random
+
+chars = 'abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUV!@#$%^&*()_+'
+
+length = int(input('Password Length: '))
+
+num_pas = int(input('Number of Passwords to generate: '))
+
+
+for _ in range(num_pas):
+    password = ''
+    for c in range(length):
+        password += random.choice(chars)
+    print(password)
